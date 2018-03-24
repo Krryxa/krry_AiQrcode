@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 通用配置 拦截器 拦截器栈，全局返回结果集   全局result type:默认返回值的指明 result-types -->
+	<package name="krry-defaults" extends="common-defaults">
+		<action name="index" class="com.krry.action.main.Main">
+			<!-- 返回/index.jsp页面    首页 -->
+			<result name="main">/index.jsp</result>
+		</action>
+		<action name="editor" class="com.krry.action.editor.Editor">
+			<!-- 返回pages/editor/editor.jsp页面 -->
+			<result name="editorPage">/pages/editor/editor.jsp</result>
+		</action>
+		<action name="result" class="com.krry.action.result.Result">
+			<!-- 返回/pages/editor/result.jsp页面   -->
+			<result name="resultImg">/pages/result/result.jsp</result>
+		</action>
+	</package>
+</struts>

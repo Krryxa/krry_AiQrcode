@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 通用配置 拦截器 拦截器栈，全局返回结果集   全局result type:默认返回值的指明 result-types -->
+	<!-- 一定要继承struts-default -->
+	<package name="common-defaults" extends="struts-default">
+		<!-- 全局放回页面的置顶  404页面 login.html,首页 错误业务 退出页面-->
+		<global-results>
+			<!-- 页面的转发 -->
+			<result name="main" type="redirect">/index.jsp</result>
+			<result name="editorPage">/pages/editor/editor.jsp</result>
+			<result name="404" type="redirect">/404.jsp</result>
+ 		</global-results>
+ 		<!-- 统计报表action注册 -->
+	</package>
+</struts>

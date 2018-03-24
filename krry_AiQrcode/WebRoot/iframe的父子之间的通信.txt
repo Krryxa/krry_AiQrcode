@@ -1,0 +1,6 @@
+父页面调用子页面方法：FrameName.window.childMethod();
+
+子页面调用父页面方法：parent.window.parentMethod();
+
+//调用爷爷的方法
+parent.window.parent.window.skipEditor();

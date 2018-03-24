@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 在同一个命名空间下面可以有相同的命名空间，在同一命名空间下面是不允许有相同的action-name -->
+	<!-- 注册通用的配置文件 -->
+	<include file="config/struts-defaults.xml"></include>
+	<include file="config/struts-base.xml"></include>
+</struts>
