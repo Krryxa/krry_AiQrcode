@@ -8,7 +8,8 @@ Java 开发精美艺术二维码
 
 ## 根据以往例子
 
-根据之前所做的小项目 java 开发二维码系统
+根据我之前所做的小项目 java 开发二维码系统
+此次使用 Struts2 框架
 
 ![](https://raw.githubusercontent.com/Krryxa/krry_AiQrcode/master/WebRoot/resource/images/cutImg/new.jpg)
 
