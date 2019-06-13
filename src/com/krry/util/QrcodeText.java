@@ -130,7 +130,7 @@ public class QrcodeText{
 			//如果类型不是单码，则装载背景图片，将二维码写进背景图片中，只有单码没有背景
 			if(!type.equals("dan")){
 				//装载背景图片
-				BufferedImage imageBG = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\bg.jpg"));
+				BufferedImage imageBG = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/bg.jpg"));
 				//获取背景图片的画笔
 				Graphics2D bg = imageBG.createGraphics();
 				
@@ -164,7 +164,7 @@ public class QrcodeText{
 				String realPath = request.getRealPath("/");
 				//String realPath = 服务器项目的地址;
 				pathName = new Date().getTime()+".jpg";
-				outputStream = new FileOutputStream(new File(realPath+"upload\\", pathName));
+				outputStream = new FileOutputStream(new File(realPath+"upload/", pathName));
 				ImageIO.write(imageBG, "jpg", outputStream);
 				
 			}else{ //如果类型是单码，直接释放输出
@@ -174,7 +174,7 @@ public class QrcodeText{
 				String realPath = request.getRealPath("/");
 				//String realPath = 服务器项目的地址;
 				pathName = new Date().getTime()+".png";
-				outputStream = new FileOutputStream(new File(realPath+"upload\\", pathName));
+				outputStream = new FileOutputStream(new File(realPath+"upload/", pathName));
 				ImageIO.write(image, "png", outputStream);
 			}
 		}catch(Exception e){
@@ -199,23 +199,23 @@ public class QrcodeText{
 	public static void loadImage(String aspath,String type,String filename){
 		try {
 			//加载码眼
-			image_eye = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\eye.png"));
+			image_eye = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/eye.png"));
 			//装载50*50的图片素材
-			image11 = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\11.png"));
-			image12 = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\12.png"));
-			image13 = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\13.png"));
+			image11 = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/11.png"));
+			image12 = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/12.png"));
+			image13 = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/13.png"));
 			//装载100*50的图片素材
-			image21 = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\21.png"));
-			image22 = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\22.png"));
-			image23 = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\23.png"));
+			image21 = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/21.png"));
+			image22 = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/22.png"));
+			image23 = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/23.png"));
 			//装载50*100的图片素材
-			image31 = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\31.png"));
-			image32 = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\32.png"));
-			image33 = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\33.png"));
+			image31 = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/31.png"));
+			image32 = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/32.png"));
+			image33 = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/33.png"));
 			//装载100*100的图片素材
-			image41 = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\41.png"));
-			image42 = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\42.png"));
-			image43 = ImageIO.read(new FileInputStream(aspath+"\\images\\ImageMaker\\"+type+"\\"+filename+"\\43.png"));
+			image41 = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/41.png"));
+			image42 = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/42.png"));
+			image43 = ImageIO.read(new FileInputStream(aspath+"/images/ImageMaker/"+type+"/"+filename+"/43.png"));
 			
 		} catch (Exception e) {
 			e.printStackTrace();
