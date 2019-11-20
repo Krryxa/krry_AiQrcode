@@ -1,6 +1,6 @@
 Java 开发精美艺术二维码
 
-看到网络上各种各样的二维码层出不穷，好像很炫酷的样子，一时兴起，我也要制作这种炫酷二维码效果
+看到网络上各种各样的二维码层出不穷，好像很炫酷的样子，一时兴起
 
 例如：
 ![](https://raw.githubusercontent.com/Krryxa/krry_AiQrcode/master/WebRoot/resource/images/cutImg/ext.jpg)
@@ -432,7 +432,7 @@ public class QrcodeText{
 ![](https://raw.githubusercontent.com/Krryxa/krry_AiQrcode/master/WebRoot/resource/images/cutImg/4.jpg)
 
 ## 相关地址
-项目地址：[https://www.ainyi.com/krry_AiQrcode](https://www.ainyi.com/krry_AiQrcode)
+项目地址：[http://www.ainyi.com/krry_AiQrcode](http://www.ainyi.com/krry_AiQrcode)
 
 GitHub：[https://github.com/Krryxa/krry_AiQrcode](https://github.com/Krryxa/krry_AiQrcode)
 > 欢迎 start
